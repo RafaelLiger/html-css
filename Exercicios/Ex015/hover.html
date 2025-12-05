@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p {
+            /*seleciona o paragrafo que esta dentro da div*/
+            display: none; /*oculta o paragrafo*/
+        }
+        div:hover > p {
+            /*quando o mouse passar por cima da div, o paragrafo dentro dela vai aparecer*/
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        div:hover {/*quando o mouse passar por cima da div, a cor de fundo dela vai mudar para vermelho*/
+            color: red;
+        }
+        p.passar:hover {/*quando o mouse passar por cima do paragrafo com a classe passar, a cor de fundo dele vai mudar para azul*/
+            background-color: rgb(76, 0, 255);
+        }
+        
+        p.click:active {/*quando o paragrafo com a classe click for clicado, a cor de fundo dele vai mudar para verde*/
+            background-color: rgb(0, 255, 42);
+        }
+        
+        /*possuem hierarquia quando coloca passar o mouse depois clicar, o clicar tem prioridade então n funciona*/
+
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>passe o mouse aqui
+        <p class="click passar">texto escondido (clique aqui)</p>
+        <p class="click passar">texto escondido (clique aqui)</p>
+    </div>
+    <p>Fim do exemplo</p>  
+</body>
+</html>

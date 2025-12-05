@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/navio200.jpg" type="image/x-icon">
+    <title>Grouping tags/caixas/sombras/bordas areondadas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+        body {
+            font-family: "Pirata One", system-ui, "sans-serif";
+            font-weight: 200;
+            font-style: normal
+        }
+        header {
+            background-image: url('imagens/navio200.jpg');
+            height: 150px;
+           
+            
+        }
+        header > h1 {
+            height: 54px;
+            text-align: center;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: underline;
+           
+
+        }
+        article > h2 {
+            background-color: #0D0D0D;
+            color: #ffffff;
+        }
+        main {
+            background-color: #F2EEEB;
+            
+        }
+        footer {
+            text-align: center;
+            background-color: #0D0D0D;
+            color: #ffffff;
+        }
+        nav  {
+            margin: auto;
+            height: 78px;
+            background-color: #351a1a;
+            box-shadow: 5px 6px 11px 2px rgba(0, 0, 0, 0.418); /*sombra na caixa*/
+            border-radius: 10px 10px 10px 10px; /*short hands borda arredondada*/
+        }
+        nav > a {
+            background-color:#f50202f6 ;
+            color: #FFFFFF;
+            border: solid 2px #FFFFFF;
+            padding: -2px;
+            margin: 45px;
+            text-decoration: none;
+        }
+        nav > a:hover {
+            padding: 15px;
+            text-decoration: underline;
+            
+        }
+        ul.lis1 {
+            display: none;
+            
+        }
+        li:hover > ul.lis1  {
+            display: block;
+            background-color: #000000;
+            width: 150px;
+        }
+        .top {
+            color: #ffffff;
+        }
+        a {
+            
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.911);
+            border-radius: 5px 5px 5px 5px; /*short hands bordda arredondada*/
+            
+            
+        }
+        a:hover {
+            background-color: #ff0000;
+            color: #FFFFFF;
+            text-decoration: underline;
+            
+        }
+        
+        
+        a:active {
+            color: rgb(255, 251, 2);
+        }
+
+        section {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        ul {
+            width: 70px;
+        } 
+        footer > img:hover {
+            width: 400px;
+            height: 800px;
+            border-radius: 40%; /* Borda arrendodada*/
+            
+        }
+        span {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header><!--cabeçalho do site--> 
+        <h1>Matias's Pirate Movies ☠️</h1>
+        <nav><!--menu de navegação-->
+            <a href="">Filmes</a>
+            <a href="">Séries</a>
+            <a href="">Animes</a>
+            <a href="">Pornô Gay</a>
+        </nav>
+    </header>
+    <main><!--conteúdo principal do site-->
+        <article><!--artigo ou postagem-->
+            <h2>Filmes</h2>
+            <ul>
+                <li>Romance
+                    <ul class="lis1">
+                        <li> <a href=https://img.freepik.com/fotos-premium/uma-manada-de-dinossauros-viu-um-asteroide-cair-o-asteroide-que-causou-a-extincao-dos-dinossauros_1133052-35.jpg target="_blank">A culpa é das Estrelas</a></li>
+                        <li><a href=https://pheeno.com.br/wp-content/uploads/2023/10/Leandrinha-Du-Art.webp target="_blank">Uma Linda Mulher</a></li>
+                        <li><a href="https://www.humordaterra.com/wp-content/uploads/2012/04/ps-eu-te-amo-arreganho.gif" target="_blank">P.S Eu te amo</a></li>
+                    </ul>
+                </li>
+                <li><img src="imagens/favicon.ico" alt="em manutenção" width="20px" height="20px"></li>
+                <li><img src="imagens/favicon.ico" alt="em manutenção" width="20px" height="20px"></li>
+                <li><img src="imagens/favicon.ico" alt="em manutenção" width="20px" height="20px"></li>
+            </ul>
+        </article>
+        <section id="assuntos"><!--seção do site pode estar dentro de article ou vise versa-->
+            <h2>Título da seção</h2>
+            <p>Conteúdo da seção...</p>
+        </section>
+        <section id="sobre">
+            <article>
+                <h2>Aviso Legal:</h2>
+                <p>Este site é desenvolvido exclusivamente para fins educativos. Todo o conteúdo aqui presente tem como objetivo promover o aprendizado e não possui qualquer intenção comercial ou de violação de direitos autorais.
+</p>
+                <aside>Ass: R.L </aside>
+
+            </article>
+        </section>
+
+    </main>
+    <footer><!--rodapé do site-->
+        <img src="imagens/matias.jpg" alt="dev" width="50px" height="70">
+        <p>Direitos autorais © 2024 Matias's Pirate Movies</p>
+            
+
+    </footer>   
+    
+</body>
+</html>

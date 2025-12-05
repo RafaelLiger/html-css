@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;/*coloca os elementos na horizontal(NA MESMA LINHA)*/
+            background-color: rgb(187, 187, 187);
+            border: 1px solid black; /*bordas de 1px preta ( isto é um shorthande: largura, tipo, cor)*/
+            text-align: center;
+            height: 200px;
+            width: 200px;
+
+
+        }
+        /*pseudoclasse são classes relacionadas ao estado de um determinado elemento*/
+        div:hover { 
+            /*quando o mouse passar por cima do elemento, ele vai mudar a cor de fundo para amarelo ( : = pseudoclasse)*/
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos(links)</title>
+    <style>
+    /*  
+        SELETEROS PERSONALIZADOS
+        ----------------------------------
+        #  = id
+        .  = class
+        :  = pseudoclasse
+        :: = pseudoelemento
+        >  = filho direto(cildren)
+    */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none; /*remove o sublinhado do link*/;
+        }
+        
+        a:visited {
+            /*link visitado*/
+            color: purple;
+        }
+        a:hover {
+            /*quando o mouse passar por cima do link*/
+            color: green;
+            text-decoration: underline; /*adiciona o sublinhado ao link*/
+        }
+        a:active {
+            /*quando o link for clicado*/
+            color: rgb(224, 17, 214);
+        }
+        a::before {
+            content: "🔗"; /*adiciona um conteudo antes do link*/
+        }
+        a::after {
+            /*adiciona um conteudo depois do link*/
+            content: " (clique aqui!)";
+            font-size: 0.8em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+        <li><a href="https://www.twitch.tv/" target="_blank">Twitch</a></li>
+    </ul>
+    
+</body>
+</html>
