@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cover/attachment</title>
 
     <style>
         body {
+            
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /* adpta o conteudo da imagem de acordo com a variação de tamanho da janela */
+            background-size: cover; /* adpta o conteudo da imagem de acordo com a variação de tamanho da janela 
+            background-attachment: fixed; /* fixa A IMAGEM NA TELA E N QUEBRA A IMAGEM*/ 
+
+            /* Shorthand - background 
+            [color > image > position > repeat > [size] > attachment]
+            obs: apesar de a regra estar certa o size não está funcionando no shorthand então deve ser escrito fora 
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
 
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;/* ajusta o conteudo na tela quando chegar no tamanho selecionado*/
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,7 +40,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam, ad velit a voluptatibus id. Praesentium cupiditate debitis quaerat repellendus commodi amet. Error voluptate ex aut ipsum labore sed pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur exercitationem debitis quidem cupiditate autem ab. Quaerat facilis, nesciunt repudiandae delectus vitae explicabo, cupiditate nobis earum saepe cum, numquam animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur nulla fugiat at a ullam accusantium est veritatis. Blanditiis officia inventore animi quia commodi esse aut sint id temporibus ad!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam, ad velit a voluptatibus id. Praesentium cupiditate debitis quaerat repellendus commodi amet. Error voluptate ex aut ipsum labore sed pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur exercitationem debitis quidem cupiditate autem ab. Quaerat facilis, nesciunt repudiandae delectus vitae explicabo, cupiditate nobis earum saepe cum, numquam animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur nulla fugiat at a ullam accusantium est veritatis. Blanditiis officia inventore animi quia commodi esse aut sint id temporibus ad! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, odit. Harum quaerat iure neque quod tenetur fugit perspiciatis praesentium architecto quia sint non distinctio, pariatur mollitia animi nemo iusto explicabo Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque recusandae quasi, in assumenda quam laborum inventore, debitis obcaecati, aliquam voluptatibus atque! Blanditiis delectus et ut quam! Sint repudiandae ratione omnis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia nam, non cupiditate modi doloribus alias nostrum itaque quis nesciunt eius obcaecati vero sunt rem eum accusamus blanditiis fuga, aut explicabo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis dolores pariatur non odit, officia quo. Beatae neque, exercitationem id iusto obcaecati natus iure! Voluptatibus enim vel voluptate possimus dolore?/p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam, ad velit a voluptatibus id. Praesentium cupiditate debitis quaerat repellendus commodi amet. Error voluptate ex aut ipsum labore sed pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur exercitationem debitis quidem cupiditate autem ab. Quaerat facilis, nesciunt repudiandae delectus vitae explicabo, cupiditate nobis earum saepe cum, numquam animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur nulla fugiat at a ullam accusantium est veritatis. Blanditiis officia inventore animi quia commodi esse aut sint id temporibus ad! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, odit. Harum quaerat iure neque quod tenetur fugit perspiciatis praesentium architecto quia sint non distinctio, pariatur mollitia animi nemo iusto explicabo Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque recusandae quasi, in assumenda quam laborum inventore, debitis obcaecati, aliquam voluptatibus atque! Blanditiis delectus et ut quam! Sint repudiandae ratione omnis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia nam, non cupiditate modi doloribus alias nostrum itaque quis nesciunt eius obcaecati vero sunt rem eum accusamus blanditiis fuga, aut explicabo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis dolores pariatur non odit, officia quo. Beatae neque, exercitationem id iusto obcaecati natus iure! Voluptatibus enim vel voluptate possimus dolore?/p>
     </main>
     
 </body>
