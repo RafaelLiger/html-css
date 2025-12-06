@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad+Guides&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+:root {
+    --fonte0: arial, helvetica, sans-serif;
+    --fonte1: "Playwrite US Trad Guides",cursive;
+    --fonte2: "Cedarville Cursive", cursive;
+
+}
 
 * {
     margin: 0px;
@@ -9,6 +20,7 @@
 html, body {
     min-height: 100vh;
     background-color: grey;
+    font-family: var(--fonte0);
 
 
 }
@@ -21,6 +33,13 @@ header {
 header >h1 {
     padding-top: 50px;
     font-variant: small-caps; /*deixa as letras maiusculas mas não tão grande*/
+    font-family: var(--fonte1);
+    font-weight: 400;
+    font-style:  normal;
+    font-size: 5vw;
+   
+   
+
 }
 
 header > p {
@@ -39,6 +58,10 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+    font-family: var(--fonte2);
+    font-size: 3.8vw;
+    padding-left: 30px;
+    
 }
 section.normal {
     background-color: white;
