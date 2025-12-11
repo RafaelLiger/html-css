@@ -4,8 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            
+
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+
+
 </head>
 <body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--
+        Anatomia para tabelas grandes
+        table=tabela
+            thead=cabeçalho da tabela
+                tr=table row(linha da tabela) 
+                    th=table header(cabeçalho da tabela)
+            tbody=corpo da tabela
+                tr=table row(linha da tabela) 
+                    td=table data(dado da tabela)
+            tfoot=rodapé da tabela
+                tr=table row(linha da tabela) 
+                    td=table data(dado da tabela)
+                    
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>4608180</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>2139344</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17223547</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14870907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11890517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11233263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9562007</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9268836</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8711196</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7725163</td>
+            </tr>
+
+           
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td>0000000</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
     
 </body>
 </html>
