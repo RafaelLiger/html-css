@@ -28,12 +28,30 @@
         .media {
             text-align: left;
         }
+        col.carea {
+            background-color:greenyellow;
+        }
+        col.cgrupo {
+            background-color: lightblue;
+        }
+        .vermelho { /* Classe para a coluna da média */
+            background-color: red;
+        }
     </style>
 </head>
 <body>
     <h1>Tabela 3 do desafio</h1>
-
+   
+   
     <table>
+        <colgroup>  <!-- Define estilos para colunas específicas -->
+            <col class="carea">
+            <col class="cdiciplinas">
+            <col class="cgrupo" span="2"> <!-- Aplica estilo a duas colunas por isso só tem 4 col, 2 colulas estão compartilhando a msm configuração -->
+            <col class="vermelho"> <!-- Coluna da média com fundo vermelho -->
+
+
+        </colgroup>
         <thead>
             <tr>
                 <th rowspan="2" scope="col">Área</th>
