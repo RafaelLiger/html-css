@@ -10,9 +10,11 @@
             font-family: Arial, Helvetica, sans-serif;
             
         }
+        
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* para o caption ficar dentro da tabela */
             
 
         }
@@ -22,9 +24,28 @@
             
         }
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(54, 54, 54);
             color: white;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px; /* fixa o cabeçalho no topo da tabela ao rolar a página */
+            background-color: rgb(54, 54, 54); /* necessário para sobrescrever o fundo ao rolar */
+        }
+        tbody > tr:nth-child(2n) { /* seleciona as linhas pares do corpo da tabela se por odd e impar e even é de pár em par */
+            background-color: lightgray;
+        }
+        .num {
+            text-align: right;
+        }
+        caption {
+            font-weight: bold;
+            padding: 10px;
+            font-size: 1.5em;
+            background-color: lightgray;
+        
+        }
+        
     </style>
 
 
@@ -35,6 +56,7 @@
     <!--
         Anatomia para tabelas grandes
         table=tabela
+            CAPTION=legenda da tabela
             thead=cabeçalho da tabela
                 tr=table row(linha da tabela) 
                     th=table header(cabeçalho da tabela)
@@ -47,53 +69,176 @@
                     
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!-- scope="col" indica que é um titulo de coluna -->    
+                <th scope="col">População</th>
             </tr>
 
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>4608180</td>
+                <td class="num">4608180</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>2139344</td>
+                <td class="num">2139344</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17223547</td>
+                <td class="num">17223547</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14870907</td>
+                <td class="num">14870907</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td>11890517</td>
+                <td class="num">11890517</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>11233263</td>
+                <td class="num">11233263</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9562007</td>
+                <td class="num">9562007</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>9268836</td>
+                <td class="num">9268836</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td>8711196</td>
+                <td class="num">8711196</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
-                <td>7725163</td>
+                <td class="num">7725163</td>
+            </tr>
+            
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3560910</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4059905</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3351543</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2360436</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7030998</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3289290</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4083976</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830026</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1609279</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636707</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1609295</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3648555</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2875623</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7206589</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3094325</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4018650</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8711196</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">733759</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4083976</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636707</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1609279</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830026</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1609295</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3648555</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2875623</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7206589</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7030998</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3289290</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4059905</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3560910</td>
             </tr>
 
            
@@ -101,13 +246,35 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>0000000</td>
+                <th scope="row">Total de habitantes</th> <!-- scope="row" indica que é um titulo de linha -->
+                <td class="num"><strong>155.982.778</strong></td>
             </tr>
 
         </tfoot>
 
     </table>
-    
+    <h2>repare que o a parte fixa da tabela sai quando começa a rolagem do texto</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum iusto in laborum, autem nostrum omnis enim facere quis hic, ipsum ex. Dignissimos illo sed quisquam dolorem beatae asperiores dolor.</p>
+
+
 </body>
 </html>
