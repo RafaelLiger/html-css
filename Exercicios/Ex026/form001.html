@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php"> <!-- action é para onde os dados serão enviados -->
+        <p><label for="inome">Nome:</label> <!-- for é para qual id o label está associado label serve para linkar o <p>nome com o input para melhor compreensão do navegador -->
+             <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p> <!-- name é o nome do campo que será enviado. Name é mais utilizado em html e php e o id mais usando em javascript e label -->
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    
+</body>
+</html>
