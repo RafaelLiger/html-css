@@ -35,7 +35,8 @@
     </p>
     <p>
         <label for="inivel">Nível de Satisfação: </label>
-        <input type="range" nome="nivel" id="inivel" min="0" max="5" > <!--min e max definem o intervalo-->
+        <input type="range" nome="nivel" id="inivel" min="0" max="10" value ="5" oninput="ival.innerHTML = Number(inivel.value)"> <!--range cria uma barra deslizante os numeros mudão por causo do javascript-->
+        <output id="ival">5</output> <!--min e max definem o intervalo-->
     </p>
      <p>
         <label for="ifoto">Foto de perfil</label>
