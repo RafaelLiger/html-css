@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulario</h1>
-    <form action="cadastro.php"> <!-- action é para onde os dados serão enviados -->
+    <form action="cadastro.php" method="post"><!-- post é o método de envio esconde os dados enviados de aparcer na url mas não os criptografa-->
         <p><label for="inome">Nome:</label> <!-- for é para qual id o label está associado label serve para linkar o <p>nome com o input para melhor compreensão do navegador -->
              <input type="text" name="nome" id="inome">
         </p>
