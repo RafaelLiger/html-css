@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox centralizada</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: white;
+        }
+        main {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+        }
+        section {
+            background-color: red;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>centralize a caixa</h1>
+        </section>
+    </main>
+    
+</body>
+</html>
