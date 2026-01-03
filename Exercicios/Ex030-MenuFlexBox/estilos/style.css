@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* faz o elemento manter largura/altura total incluindo conteúdo, padding e borda.*/
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vh;
+}
+header {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}   
+header > h1 {
+    border: 1px dotted black;
+}
+header > nav {
+    border: 1px dotted black;
+}
+main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+
+}
+
