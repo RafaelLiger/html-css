@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid layout</title>
+    <style>
+        div.container {
+            border: 3px solid blue;
+            display: grid;
+            grid-template-columns: auto auto auto; /* tbm podem ser usados valores ex: 10px 10px 10px , cada um se refere ao numero de colunas*/
+            grid-template-rows: 100px 100px 100px;
+            /*grid-gap substituido por gap w3c*/
+            gap: 10px;
+        }
+        div.item {
+            border: 2px dashed red;
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    </div>
 </body>
 </html>
