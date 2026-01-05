@@ -9,15 +9,23 @@
             border: 3px solid blue;
             height: 500px;
             display: grid;
-            /* grid-template-columns: auto auto auto;  tbm podem ser usados valores ex: 10px 10px 10px , cada um se refere ao numero de colunas
-            grid-template-rows: 100px 100px 100px;*/
-            grid-template: 100px 100px 100px/ auto auto auto; /* forma simplificada à de cima, ordem linha/coluna*/
+            /*(grid-template-columns: auto auto auto;  tbm podem ser usados valores ex: 10px 10px 10px , cada um se refere ao numero de colunas
+            grid-template-rows: 100px 100px 100px;)
+
+            grid-template: 100px 100px 100px/ auto auto auto; -> forma simplificada à de cima, ordem linha/coluna*/
+            grid-template: repeat(3, 100px)/ repeat(3, auto);/* simplificado em relação ao de cima*/
+            
             /*grid-gap substituido por gap w3c*/
             gap: 10px;
-            align-items: normal;
-            align-content: center;
-            justify-content: space-between;
-            justify-items: normal;
+            /*align-items: normal;
+            justify-items: normal;*/
+            place-items: normal normal;
+
+            /*align-content: center;
+            justify-content: space-between;*/
+            place-content: center space-between;
+
+            
             grid-auto-rows: 100px ;/* acima foram determinadas 3 linhas(rows) e 3 colunas. esse comando determina que a celulas implicitas teram 100px, este comando tbm pode ser usado para colunas com -columns no lugar de -rows*/
         }
         div.item {
