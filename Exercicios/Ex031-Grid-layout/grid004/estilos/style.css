@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main#container {
+    display: grid;
+    border: 2px solid black;
+    flex-flow: row wrap;
+    grid-template: repeat(3, 100px) / repeat(3, 1fr);
+    place-items: normal normal;
+    place-content: normal normal;
+}
+main#container > section {
+    border: 2px dashed red;
+}
+main#container > section.caixa1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(43, 192, 185);
+
+}
+main#container > section.caixa2 {
+     display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end:4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blueviolet;
+}
+main#container > section.caixa3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    /* simplificando
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    grid-row: 2/4;*/
+
+    /* SIMPLIFICANDO
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-column: 3/4; */
+
+    /* simplificando MAIS */
+    grid-area :2/3/4/4 ;
+
+
+    background-color: chartreuse;
+}
+.item1 {}
+.item2 {}
+.item3 {}
