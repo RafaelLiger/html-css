@@ -10,7 +10,7 @@ body#container {
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template: 100px 20px 470px 20px / 2fr 1fr;
+    grid-template: 110px 20px 1fr 20px / 2fr 1fr;
     gap:10px;
     place-items: normal normal;
     place-content: normal normal;
@@ -67,7 +67,7 @@ div.secundario {
     color: white;
     grid-area:4/1/5/4;
     text-align: center;
-    font-size: .7em;
+    font-size: .8em;
     padding-top: 3px;
 }
 .rodape > p > a {
