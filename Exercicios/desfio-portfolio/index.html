@@ -13,11 +13,11 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-diagram-project"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="#ficha" class="link"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" class="link"><i class="fa-solid fa-diagram-project"></i></a></li>
+                <li><a href="#" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
 
         </nav>
@@ -191,11 +191,38 @@
             </article><!--fim article#formacao-->
             <article id="projetos">
                 <h2><i class="fa-solid fa-diagram-project"></i>Projetos</h2>
+
+                <div id="projeto-container">
+                    <div class="projeto">
+                        <img src="imagens/projeto-01-videos.jpg" alt="projeto 1">
+                        <div class="projeto-info">
+                           <p class="periodo">2022</p>
+                            <h3 class="titulo">Projeto de Vídeos</h3>
+                            <p>projeto criado para a inserção de vídeos</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary> <!--Botão de expandir-->
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quaerat eum enim! Voluptas, qui hic illo harum, eligendi exercitationem ex, aspernatur laborum sapiente delectus a cupiditate recusandae architecto sunt doloribus.</p>
+                            </details> 
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="imagens/projeto-02-cordel.jpg" alt="projeto 2">
+                        <div class="projeto-info">
+                           <p class="periodo">2023</p>
+                            <h3 class="titulo">Projeto de Vídeos</h3>
+                            <p>projeto criado para trinar efeito paralax em imagens.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary> <!--Botão de expandir-->
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quaerat eum enim! Voluptas, qui hic illo harum, eligendi exercitationem ex, aspernatur laborum sapiente delectus a cupiditate recusandae architecto sunt doloribus.</p>
+                            </details> 
+                        </div>
+                    </div>
+                </div>
             </article><!--fim article#projetos-->
         </section>
     </main>
     <footer>
-
+        portfólio criado por <a href="https://www.cursoemvideo.com/" target="_blank" rel="nofollow">Curso em Vídeo</a> - &copy; 2024
     </footer>
     <script src="scripts/script.js"></script>
 </body>
