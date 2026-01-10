@@ -20,11 +20,20 @@
   --destaque-inverso: #66bbff;
   --fundo-card: #ffffff;
 }
+body.escuro {
+  --fundo-principal: #121212;
+  --texto: #e0e0e0;
+  --texto-inverso: #121212;
+  --destaque: #1E90FF;
+  --destaque-inverso: #559eff;
+  --fundo-card: #1e1e1e;
+}
 body {
   background-color: var(--fundo-principal);
   color: var(--texto);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
+  transition: background-color 1s, color 1s;
 }
 header {
   background-color: var(--destaque);
