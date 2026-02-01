@@ -16,15 +16,15 @@
   --fundo-principal: #f0f0f0;
   --texto: #333333;
   --texto-inverso: #ffffff;
-  --destaque: #007BFF;
-  --destaque-inverso: #66bbff;
+  --destaque: #1F3A5F;
+  --destaque-inverso: #2F80ED;
   --fundo-card: #ffffff;
 }
 body.escuro {
   --fundo-principal: #121212;
   --texto: #e0e0e0;
   --texto-inverso: #121212;
-  --destaque: #1E90FF;
+  --destaque: #1e8fff;
   --destaque-inverso: #559eff;
   --fundo-card: #1e1e1e;
 }
@@ -71,7 +71,7 @@ main {
 }
 section#ficha {
   background-color: var(--fundo-card);
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
   grid-column: 2;   
 }
@@ -81,7 +81,7 @@ section#ficha img.foto {
   object-fit: cover; /*Mantém a proporção e faz o conteúdo preencher todo o contêiner, cortando partes se necessário*/
   border-radius: 50%;
   border: 5px solid var(--fundo-card);
-  outline: 5px solid var(--destaque); /* borda por fora da borda*/
+  outline: 5px solid var(--destaque-inverso); /* borda por fora da borda*/
   display: block;
   margin: auto;
   margin-bottom: 15px;
@@ -91,6 +91,12 @@ section#ficha h1 {
   margin: 15px 0;
   font-size: 1.5em;
   text-align: left;
+}
+section#ficha p {
+  text-align: justify;
+  hyphens: auto;
+  font-size: 1.05em;
+  line-height: 1.8;
 }
 div#social {
   display: flex;
@@ -121,22 +127,23 @@ article h2 {
   margin-bottom: 10px;
   font-size: 1.3em;
 }
-.video-container {
+.video-container{
   position: relative;
-  width: 100%;
-  margin: auto;
-  aspect-ratio: 16/9;
-  
-
+  max-width: 650px;
+  line-height: 1.8;
+  font-size: 1.05em;
+  text-align: justify;
+  hyphens: auto;
   }
-  .video-container iframe {
+  
+  /*.video-container iframe {
     position: absolute;
     top: 0;
     left:0;
     width: 100%;
     height: 100%;
     border-radius: 8px;
-  }
+  } */
   #skill-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -219,7 +226,7 @@ article h2 {
   a{
     text-decoration: none;
     color: inherit;
-     object-fit: cover;
+    
   }
   a > #projeto-container .projeto{
     width: 100%;
