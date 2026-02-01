@@ -216,12 +216,18 @@ article h2 {
     cursor: pointer;
     border-color: var(--destaque);
   }
-  #projeto-container .projeto img {
+  a{
+    text-decoration: none;
+    color: inherit;
+     object-fit: cover;
+  }
+  a > #projeto-container .projeto{
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover; /* eevita a distorção da imagem */
     overflow: hidden;
     border-radius: 8px;
+    
   }
   footer {
     text-align: center;
